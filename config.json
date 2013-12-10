@@ -1,0 +1,9 @@
+{
+  "locals": {
+    "title": "Bare minimum wintersmith site"
+  },
+  "plugins": [
+  	"./node_modules/wintersmith-coffee/",
+  	"./node_modules/wintersmith-stylus/"
+  ]
+}
