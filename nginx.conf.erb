@@ -1,0 +1,30 @@
+worker_processes 1;
+error_log stderr;
+pid nginx.pid;
+daemon off;
+
+events {
+	worker_connections 768;
+} 
+
+http {
+	include mime.types;
+	server {
+		listen <%= ENV['PORT'] %>;
+		server_name  _;
+		root /app/www;
+		index index.html;
+
+		location /phish/beta/ {
+			return 301 https://ci.alecgorge.com/job/PhishOD/lastSuccessfulBuild/artifact/ipa/index.html;
+		}
+
+		location /phish/ {
+			return 301 https://phishapp.alecgorge.com/;
+		}
+
+		location /dead/ {
+			return 301 https://dead.alecgorge.com/;
+		}
+	}
+} 
