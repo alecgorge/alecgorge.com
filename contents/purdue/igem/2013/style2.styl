@@ -1,0 +1,292 @@
+turquoise=     #1abc9c
+green-sea=     #16a085
+
+emerald=      #2ecc71
+nephritis=     #27ae60
+
+peter-river=   #3498db
+belize-hole=   #2980b9
+
+amethyst=      #9b59b6
+wisteria=      #8e44ad
+
+wet-asphalt=   #34495e
+midnight-blue= #2c3e50
+
+sun-flower=    #f1c40f
+orange=        #f39c12
+
+carrot=        #e67e22
+pumpkin=       #d35400
+
+alizarin=      #e74c3c
+pomegranate=   #c0392b
+
+clouds=        #ecf0f1
+silver=        #bdc3c7
+
+concrete=      #95a5a6
+asbestos=      #7f8c8d
+
+purdue_black 		=	#1A1A1A
+purdue_flat_black = lighten(purdue_black,10%)
+purdue_dark_gold 	=	#a1631e
+purdue_gold 		=   #c4952b
+purdue_gray 		=   #625853
+boiler_gold 		=   #C3A873
+tornado_grass 		=   #a37b2c
+
+body
+	background white
+
+	a:visited
+		color darken(purdue_gold, 15%)
+
+img[align=right]
+	margin 10px 0 10px 20px
+
+	&:after
+		content "."
+		display block
+		height 0
+		clear both
+		visibility hidden
+
+img[align=left]
+	margin-left 10px 10px 10px 0
+
+	&:after
+		content "."
+		display block
+		height 0
+		clear both
+		visibility hidden
+
+#footer-box
+	margin-top 50px
+
+#top-section
+	position fixed
+	top 0
+	width 100%
+	height auto
+	margin auto
+	border 0
+
+	#menubar
+		position static
+		top auto
+		left auto
+		right auto
+
+		font-size 0.7em
+		height 2em
+		line-height 2em
+
+		background lighten(purdue_black, 30%)
+
+		ul
+			margin 0
+			padding 0
+			line-height 2em
+
+			li
+				margin-left 5px
+				line-height 2em
+
+				a
+					color #909090
+					background transparent
+					text-decoration none
+
+					&:hover
+						color white
+
+	.left-menu
+		width 50%
+		float left
+
+	.right-menu
+		width 50%
+		float right
+
+	#p-logo, #search-controls
+		display none
+
+#content
+	clear both
+	position static
+	width auto
+	padding 0
+	background transparent
+	color purdue_black
+	border 0
+
+	li
+		line-height 1.5em
+
+	ul, ol
+		margin 0 0 10px 40px
+
+	.firstHeading
+		display none
+
+	#bodyContent
+		& > *
+			display none
+
+		& > .purdue
+			display block
+
+		.navbar
+			margin 0
+			border-bottom 20px purdue_black solid
+			top 25px
+
+			.navbar-inner
+				background lighten(purdue_black, 15%)
+
+				ul.nav > li > a
+					offwhite = darken(white, 10%)
+					color offwhite
+
+					.caret
+						border-bottom-color offwhite
+						border-top-color offwhite
+
+					&:focus
+						background transparent
+
+					&:hover
+						color white
+						background transparent
+
+						.caret
+							border-bottom-color purdue_gold
+							border-top-color purdue_gold
+
+		#purdue-content
+			padding-top 123px
+
+			.purdue-head
+				margin 0
+				border 0
+				background purdue_gold
+				color white
+				border-bottom 20px darken(purdue_gold, 10%) solid
+
+				#headerimage
+					float left
+					border-radius 96px
+					border 3px purdue_black solid
+					margin 20px 20px 20px 0
+					overflow hidden
+					background white
+					width 192px
+					height 192px
+
+				h1
+					font-size 3em
+					line-height 1.2em
+					border 0
+					padding 60px 20px
+					margin 0
+
+					em, i
+						font-size 0.7em
+						margin-left 20px
+						color mix(purdue_gold, white, 20%)
+
+			.purdue-article
+				.gutter
+					background white
+					padding 40px 20px
+
+					h2
+						margin-bottom 2px
+						padding-bottom 0
+						border 0
+
+					#toc, .toc
+						float right
+						border 0
+						background clouds
+						margin 20px 0 20px 20px
+
+						td
+							padding 20px
+
+							ul li
+								a
+									text-decoration none
+
+									.tocnumber
+										text-decoration none
+										color darken(clouds, 20%)
+
+										&:after
+											content ". "
+
+									.toctext
+										text-decoration underline
+
+footer.purdue-footer
+	color #555
+	padding 40px 0
+
+	.fb-like-box
+		background white
+
+	.row > div > h3
+		margin-top 0
+		padding-top 0
+
+#footer-box
+	max-width 80%
+	overflow hidden
+
+@media (max-width: 980px)
+	#top-section
+		position static
+
+	#purdue-content
+		padding-top 0
+
+	#headerimage
+		display none
+
+	.navbar .btn-navbar
+		color white
+
+	#purdue-content .purdue-head
+		h1
+			padding 40px 20px !important
+
+			em, i
+				display block
+				margin-left 0 !important
+
+@media (max-width: 650px)
+	body
+		padding 0
+
+	#top-section
+		#menubar.left-menu, #menubar.right-menu
+			float none
+			width 100%
+			text-align center
+
+	#toc, .toc
+		float none
+		width 100%
+
+	footer.purdue-footer
+		padding 20px
+
+		.row > div > h3
+			margin-top 40px
+
+	#purdue-content .purdue-head
+		h1
+			padding 20px !important
+
