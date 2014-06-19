@@ -15,15 +15,15 @@ http {
 		root /app/www;
 		index index.html;
 
-		location /phish/beta/ {
+		location /phish/beta/? {
 			return 301 https://ci.alecgorge.com/job/PhishOD/lastSuccessfulBuild/artifact/ipa/index.html;
 		}
 
-		location /phish/ {
+		location /phish/? {
 			return 301 https://phishapp.alecgorge.com/;
 		}
 
-		location /dead/ {
+		location /dead/? {
 			return 301 https://dead.alecgorge.com/;
 		}
 	}
