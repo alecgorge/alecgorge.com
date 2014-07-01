@@ -19,6 +19,10 @@ http {
 			return 301 https://ci.alecgorge.com/job/PhishOD/lastSuccessfulBuild/artifact/ipa/index.html;
 		}
 
+		location ~ /resume/? {
+			return 301 http://alecgorge.com/Alec%20Gorge%20Resume.pdf;
+		}
+
 		location ~ /phish/? {
 			return 301 https://phishapp.alecgorge.com/;
 		}
