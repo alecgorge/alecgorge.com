@@ -1,10 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body,
+a,
+img,
+ul,
+ol,
+blockquote,
+pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 body {
   background: transparent url("newbg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  font-size: 21px;
+  line-height: 1.52;
   width: 100%;
   height: 100%;
+}
+p {
+  margin: 20px 0;
 }
 #wrapper {
   width: 40%;
@@ -19,4 +42,112 @@ body {
 #wrapper #welcome h1 {
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 10px;
+}
+#blog-wrapper {
+  width: 34em;
+  margin: 0 auto;
+}
+#blog-wrapper > header {
+  padding: 150px 0 20px 0;
+  text-align: center;
+}
+#blog-wrapper > header h1,
+#blog-wrapper > header h1 a {
+  color: #fff;
+}
+#blog-wrapper > header p {
+  color: rgba(255,255,255,0.6);
+}
+#blog-wrapper #content {
+  padding: 1px 40px 40px;
+  background: rgba(255,255,255,0.9);
+}
+#blog-wrapper #content .content-wrap {
+  margin-top: 39px;
+}
+#blog-wrapper #content .archive h2 {
+  margin-bottom: 20px;
+}
+#blog-wrapper #content .archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+#blog-wrapper #content .archive ul > li > span {
+  font-size: 0.8em;
+  color: #808080;
+}
+#blog-wrapper #content .archive ul ul {
+  padding-left: 10px;
+}
+#blog-wrapper #content .archive ul ul > li > span {
+  font-size: 1.1em;
+}
+#blog-wrapper #content .archive ul ul ul > li > a {
+  font-size: 0.9em;
+}
+#blog-wrapper #content .article .content *:last-child {
+  margin-bottom: 0;
+}
+#blog-wrapper #content .article .date {
+  font-size: 0.7em;
+  margin-top: 7px;
+}
+#blog-wrapper #content .article * {
+  max-width: 100%;
+}
+#blog-wrapper #content .article hr {
+  border-color: #bbb;
+  margin: 0 40px;
+}
+#blog-wrapper #content .article ul,
+#blog-wrapper #content .article ol {
+  margin: 20px 0;
+}
+#blog-wrapper #content .article ul ul,
+#blog-wrapper #content .article ul ol,
+#blog-wrapper #content .article ol ul,
+#blog-wrapper #content .article ol ol {
+  margin: 0;
+  padding-bottom: 7px;
+}
+#blog-wrapper #content .article li {
+  margin-left: 25px;
+}
+#blog-wrapper #content .article img {
+  margin: 20px 0;
+}
+#blog-wrapper #content .article pre {
+  padding: 7px;
+  margin: 20px 0;
+}
+#blog-wrapper #content .article h2 {
+  margin: 10px 0;
+}
+#blog-wrapper #content .article h3 {
+  margin: 7px 0;
+}
+#blog-wrapper #content .article .more {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+#blog-wrapper #content .article .more a:after {
+  content: " »";
+}
+#blog-wrapper > footer {
+  background: rgba(255,255,255,0.9);
+  padding: 10px 0 40px;
+  text-align: center;
+  color: rgba(0,0,0,0.6);
+}
+#blog-wrapper > footer .nav {
+  margin-bottom: 20px;
+}
+#blog-wrapper > footer p {
+  margin: 0;
+}
+#blog-wrapper > footer a {
+  color: rgba(0,0,0,0.8);
 }

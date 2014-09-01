@@ -1,11 +1,21 @@
 @import 'nib'
 
+h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
+  margin: 0; padding: 0; border: 0;
+}
+
 body
 	background transparent url('newbg.jpg') no-repeat center center fixed
 	background-size cover
 
+	font-size 21px
+	line-height 1.52
+
 	width 100%
 	height 100%
+
+p
+	margin 20px 0
 
 #wrapper
 	width 40%
@@ -21,3 +31,113 @@ body
 		h1
 			margin-top 0
 			padding-top 0
+			margin-bottom 10px
+
+#blog-wrapper
+	width 34em
+	margin 0 auto
+
+	& > header
+		padding 150px 0 20px 0
+		text-align center
+
+		h1, h1 a
+			color white
+		
+		p
+			color rgba(255, 255, 255, 0.6)
+
+	#content
+		padding 1px 40px 40px
+
+		background rgba(255, 255, 255, 0.9)
+
+		.content-wrap
+			margin-top 39px
+
+		.archive
+			h2
+				margin-bottom 20px
+
+			ul
+				list-style none
+				margin 0
+				padding 0
+				padding-bottom 15px
+
+				li
+					margin
+
+				& > li > span
+					font-size 0.8em
+					color gray
+
+				ul
+					padding-left 10px
+
+					& > li > span
+						font-size 1.1em
+
+					ul
+						& > li > a
+							font-size 0.9em
+
+		.article
+			.content *:last-child
+				margin-bottom 0
+
+			.date
+				font-size 0.7em
+				margin-top 7px
+
+			*
+				max-width 100%
+
+			hr
+				border-color #bbb
+				margin 0 40px
+
+			ul, ol
+				margin 20px 0
+
+			ul ul, ul ol, ol ul, ol ol
+				margin 0
+				padding-bottom 7px
+
+			li
+				margin-left 25px
+			
+			img
+				margin 20px 0
+
+			pre
+				padding 7px
+				margin 20px 0
+
+			h2
+				margin 10px 0
+
+			h3
+				margin 7px 0
+
+			.more
+				font-size 0.9em
+				margin-top 0
+
+				a:after
+					content: " »"
+
+	& > footer
+		background rgba(255, 255, 255, 0.9)
+		padding 10px 0 40px
+		text-align center
+		color rgba(0, 0, 0, 0.6)
+		
+		.nav
+			margin-bottom 20px
+
+		p
+			margin 0
+
+		a
+			color rgba(0, 0, 0, 0.8)

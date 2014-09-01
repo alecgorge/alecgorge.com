@@ -17,6 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "coffee-script": "~1.7.1",
+    "moment": "^2.8.2",
+    "typogr": "^0.6.4",
+    "underscore": "^1.6.0",
     "wintersmith": "~2.0.10",
     "wintersmith-coffee": "^0.2.1",
     "wintersmith-stylus": "bendrucker/wintersmith-stylus"

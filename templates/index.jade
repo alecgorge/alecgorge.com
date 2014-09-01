@@ -1,12 +1,6 @@
-doctype html
-html(lang='en')
-	head
-		meta(charset='utf-8')
-		link(type='text/css', rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css')
-		link(type='text/css', rel='stylesheet', href='style.css')
-		//- meta(name="viewport", content="width=device-width, user-scalable=no")
-		title Alec Gorge
-	body
+extends layout
+
+block body
 		#wrapper
 			#welcome
 				h1 oh. hello there.
@@ -40,6 +34,6 @@ html(lang='en')
 				p.lead Alec 
 					a(href='http://last.fm/user/alecgorge') listens to a lot of Phish, Grateful Dead, Lotus, Sara Bareilles and Josh Garrels
 					| . You may also find it interesting that he plays piano and enjoys cooking. Or you might not. It is hard to say.
-
-		script(type='text/javascript').
-			var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-27002013-1"]),_gaq.push(["_trackPageview"]),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}()
+				//- p.lead Alec has also recently started a 
+				//- 	a(href='/blog/') blog
+				//- 	|  where he blogs about most of the subjects you see on this page.

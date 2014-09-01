@@ -1,9 +1,29 @@
 {
   "locals": {
-    "title": "Bare minimum wintersmith site"
+  	"url": "http://alecgorge.com/blog",
+    "title": "Alec Gorge",
+    "name": "Alec Gorge's Blog",
+    "owner": "Alec Gorge",
+    "description": "Thoughts & opinions on Phish, programming & more"
+  },
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
   },
   "plugins": [
+  	"./plugins/paginator.coffee",
   	"./node_modules/wintersmith-coffee/plugin.coffee",
   	"./node_modules/wintersmith-stylus/plugin.coffee"
-  ]
+  ],
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
 }
