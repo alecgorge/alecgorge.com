@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alec Gorge's Blog</title>
+    <title>Alec Gorge</title>
     <atom:link href="http://alecgorge.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://alecgorge.com/blog</link>
     <description>Thoughts &amp; opinions on Phish, programming &amp; more</description>
-    <pubDate>Sat, 23  Aug 2014 14:00:00 -0400</pubDate>
+    <pubDate>Sat, 23  Aug 2014 14:00:00 -0700</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>On LivePhish &amp; PhishOD</title>
       <link>http://alecgorge.com/blog/blog/articles/livephish-phishod/</link>
-      <pubDate>Sat, 23  Aug 2014 14:00:00 -0400</pubDate>
+      <pubDate>Sat, 23  Aug 2014 14:00:00 -0700</pubDate>
       <guid isPermaLink="true">http://alecgorge.com/blog/blog/articles/livephish-phishod/</guid>
       <author></author>
       <description>&lt;p&gt;A long time ago, when the world was young — someone put some food on their tongue.

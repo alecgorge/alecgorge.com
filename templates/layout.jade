@@ -13,6 +13,12 @@ html(lang='en')
       link(type='text/css', rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css')
       link(type='text/css', rel='stylesheet', href='/style.css')
   body(class=bodyclass)
+    script(type='text/javascript').
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      document.body.className += " bg-" + getRandomInt(0, 4);
+
     block body
       #blog-wrapper
         header.header
