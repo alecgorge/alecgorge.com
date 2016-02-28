@@ -25,6 +25,6 @@
     "wintersmith-stylus": "bendrucker/wintersmith-stylus"
   },
   "engines": {
-    "node": "~0.10.26"
+    "node": "^5.0.0"
   }
 }
