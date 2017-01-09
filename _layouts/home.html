@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>{{ site.title }}</title>
+
+		<link rel="stylesheet" href="{{ site.url }}/assets/site.css">
+		<link rel="stylesheet" href="{{ site.url }}/assets/home.css">
+
+		<link href="{{ site.url }}/feed.xml" rel="feed" type="application/rss+xml" title="{{ site.title }}">
+
+		<script src="https://use.typekit.net/vyo7fln.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+		<div id="masthead">
+			<script type="text/javascript">
+			  function getRandomInt(min, max) {
+			    return Math.floor(Math.random() * (max - min + 1)) + min;
+			  }
+			  document.getElementById('masthead').className += " bg-" + getRandomInt(0, 4);
+			</script>
+			<div id="wrapper">
+			  <div id="welcome">
+				<h1>oh. hello there.</h1>
+				<h3>this is the personal site of <a href="/Alec Gorge Resume.pdf">Alec Gorge</a>.</h3>
+				<p class="lead">I <a href="https://twitter.com/alecgorge">tweet</a> from time to time. I write <a href="https://github.com/alecgorge">open-source code on GitHub</a> and work at <a href="http://stackoverflow.com/users/132509/alec-gorge">Stack Overflow</a>.
+
+				I enjoy building iOS apps, cooking, <a href="http://last.fm/user/alecgorge">music</a> &amp; live music. I built <a href="https://itunes.apple.com/us/app/relisten-formerly-listen-to/id715886886?mt=8">Relisten for iOS</a> to help put the vast live music library of archive.org in the palm of your hand.</p>
+			  </div>
+			</div>
+			<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-27002013-1"]),_gaq.push(["_trackPageview"]),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}()</script>
+		</div>
+
+		<header>
+			<h3>Recent Blog Posts</h3>
+		</header>
+
+		<main>
+			{% for post in site.posts %}
+			<article>
+				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+				<time datetime="{{ post.date }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+
+				<div>
+				{{ post.excerpt }}
+
+				<a href="{{ post.url }}" class="continue-reading" title="{{ post.title | xml_escape }}">Continue reading</a>
+				</div>
+			</article>
+			{% endfor %}
+
+		</main>
+
+		<footer>
+			<div class="copyright">
+				Copyright &copy; 2017 <a href="{{ site.url }}">Alec Gorge</a>
+			</div>
+		</footer>
+		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-27002013-1"]),_gaq.push(["_trackPageview"]),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}()</script>
+	</body>
+</html>
