@@ -7,8 +7,8 @@
 
 		<title>{{ site.title }}</title>
 
-		<link rel="stylesheet" href="{{ site.url }}/assets/site.css">
-		<link href="{{ site.url }}/feed.xml" rel="feed" type="application/rss+xml" title="{{ site.title }}">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/site.css">
+		<link href="{{ site.baseurl }}/feed.xml" rel="feed" type="application/rss+xml" title="{{ site.title }}">
 
 		<script>
 			(function(d) {
@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<header>
-			<a href="{{ site.url }}">
+			<a href="{{ site.baseurl }}">
 				{{ site.title }}
 			</a>
 		</header>
@@ -41,7 +41,7 @@
 
 		<footer>
 			<div class="copyright">
-				Copyright &copy; 2017 <a href="{{ site.url }}">Alec Gorge</a>
+				Copyright &copy; 2017 <a href="{{ site.baseurl }}">Alec Gorge</a>
 			</div>
 		</footer>
 		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-27002013-1"]),_gaq.push(["_trackPageview"]),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}()</script>

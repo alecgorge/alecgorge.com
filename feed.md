@@ -6,15 +6,15 @@ layout: null
   <channel>
     <title>Bakery Store - Articles</title>
     <description>Your latest baking news</description>
-    <link>{{ site.url }}</link>
+    <link>{{ site.baseurl }}</link>
     {% for post in site.posts %}
       {% unless post.draft %}
         <item>
           <title>{{ post.title | xml_escape }}</title>
           <description>{{ post.content | xml_escape }}</description>
           <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-          <link>{{ post.url | prepend: site.url }}</link>
-          <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+          <link>{{ post.url | prepend: site.baseurl }}</link>
+          <guid isPermaLink="true">{{ post.url | prepend: site.baseurl }}</guid>
         </item>
       {% endunless %}
     {% endfor %}
