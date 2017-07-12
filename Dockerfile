@@ -10,4 +10,4 @@ RUN bundle install
 # port 4000
 COPY . /src
 
-CMD ["serve", "--port", "8080"]
+CMD ["serve", "--port", "5000"]
