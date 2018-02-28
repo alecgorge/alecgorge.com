@@ -1,14 +1,3 @@
-FROM grahamc/jekyll
+FROM gatsbyjs/gatsby:latest
 
-RUN gem install bundler
-
-COPY Gemfile /src
-COPY Gemfile.lock /src
-
-RUN bundle install
-
-COPY . /src
-
-EXPOSE 5000
-
-CMD ["serve", "--port", "5000"]
+EXPOSE 80
