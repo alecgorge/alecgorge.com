@@ -19,10 +19,10 @@ class TemplateWrapper extends React.Component {
     return (
       <div>
         <Helmet
-          title="Alec Gorge: iOS, tvOS, TypeScript, node.js, C#, .NET Core and more!"
+          title="Alec Gorge: iOS, tvOS, TypeScript, Ruby, Postgres, Redis, node.js, C#, .NET Core and more!"
           meta={[
-            { name: 'description', content: 'Alec Gorge is an iOS, tvOS and full-stack web developer.' },
-            { name: 'keywords', content: 'ios, objc, objective-c, swift, full-stack, c#, .net, .net core, asp.net, tvos' },
+            { name: 'description', content: 'Alec Gorge is a senior engineer. iOS, Postgres, Ruby, C#' },
+            { name: 'keywords', content: 'ios, objc, objective-c, swift, full-stack, ruby, postgres, c#, .net, .net core, asp.net, tvos' },
           ]}
         >
           <meta charset="UTF-8" />
