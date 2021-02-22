@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import './index.scss'
-import './home.scss'
+import './index.scss';
+import './home.scss';
 
 class TemplateWrapper extends React.Component {
   componentDidMount = () => {

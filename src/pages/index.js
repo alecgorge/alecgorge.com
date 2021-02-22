@@ -1,7 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import { withPrefix } from 'gatsby-link'
+
+import '../layouts/index.scss';
+import '../layouts/home.scss';
 
 class IndexPage extends React.Component {
   componentDidMount = () => {
@@ -10,7 +12,18 @@ class IndexPage extends React.Component {
     }
     document.getElementById('masthead').className += " bg-" + getRandomInt(0, 7);
 
-    var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-27002013-1"]),_gaq.push(["_trackPageview"]),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}()
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-27002013-1"]);
+    _gaq.push(["_trackPageview"]);
+
+    (function() {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = ("https:" === document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b)
+    })();
   }
 
   render() {
