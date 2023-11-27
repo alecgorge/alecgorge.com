@@ -35,7 +35,7 @@ class IndexPage extends React.Component {
           <h1>hello there.</h1>
           <h3>this is the personal site of <a href={withPrefix("/Alec Gorge Resume.pdf")}>Alec Gorge</a>.</h3>
           <p className="lead">
-            I <a href="https://twitter.com/alecgorge">tweet</a> from time to time. I write <a href="https://github.com/alecgorge">open-source code on GitHub</a> and work at <a href="https://primetrust.com">Prime Trust</a>.
+            I <a href="https://twitter.com/alecgorge">tweet</a> from time to time. I write <a href="https://github.com/alecgorge">open-source code on GitHub</a> and work at <a href="https://discord.com">Discord</a>.
             I enjoy building APIs &amp; iOS apps, cooking, photography, <a href="http://last.fm/user/alecgorge">music</a> &amp; live music.
             I built <a href="https://itunes.apple.com/us/app/relisten-formerly-listen-to/id715886886?mt=8">Relisten for iOS</a> and <a href="https://relisten.net">Relisten.net</a> to help put the vast live music library of archive.org, phish.in and panicstream.com in the palm of your hand.</p>
         </div>
